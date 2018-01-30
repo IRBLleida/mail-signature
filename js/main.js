@@ -6,56 +6,42 @@
     /*==================================================================
     [ Focus Contact2 ]*/
     $('.input3').each(function(){
-        $(this).on('blur', function(){
+        $(this).on('keyup', function(){
             if($(this).val().trim() != "") {
                 $(this).addClass('has-val');
             }
             else {
                 $(this).removeClass('has-val');
             }
-        })    
+
+            var id = $(this).attr('id');
+            var val = $(this).val();
+
+            if(id == 'email'){
+              $('#sig-email').attr('href', 'mailto:' + $(this).val());
+            }
+
+            if(id == 'phone'){
+              $('#sig-phone').attr('href', 'tel:' + $(this).val());
+            }
+
+            if(id == 'addr1' || id == 'addr2' || id == 'city' || id == 'postcode' || id == 'country'){
+              val = ', ' + $(this).val();
+            }
+            $('#sig-' + id).text(val);
+        })
     })
-            
 
-    /*==================================================================
-    [ Chose Radio ]*/
-    $("#radio1").on('change', function(){
-        if ($(this).is(":checked")) {
-            $('.input3-select').slideUp(300);
-        }
-    });
 
-    $("#radio2").on('change', function(){
-        if ($(this).is(":checked")) {
-            $('.input3-select').slideDown(300);
-        }
-    });
-        
-  
-    
     /*==================================================================
     [ Validate ]*/
-    var name = $('.validate-input input[name="name"]');
-    var email = $('.validate-input input[name="email"]');
-    var message = $('.validate-input textarea[name="message"]');
-
+    var name = $('#name');
 
     $('.validate-form').on('submit',function(){
         var check = true;
 
         if($(name).val().trim() == ''){
             showValidate(name);
-            check=false;
-        }
-
-
-        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-            showValidate(email);
-            check=false;
-        }
-
-        if($(message).val().trim() == ''){
-            showValidate(message);
             check=false;
         }
 
@@ -80,7 +66,7 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
+
+
 
 })(jQuery);

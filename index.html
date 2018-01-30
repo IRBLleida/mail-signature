@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>IRBLleida Signatura</title>
+	<title>IRBLleida Signature</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -25,7 +25,12 @@
 
 <div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
 <div class="row container-bg-contact3">
-	<div class="col-md-8">
+	<div class="col-md-12" style="margin-top: 20px">
+		<span class="contact-title">
+			IRBLleida Sigrnature generator
+		</span>
+	</div>
+	<div class="col-md-6">
 		<div class="row">
 		<div class="col-md-6">
 		<div class="container-contact3">
@@ -36,17 +41,17 @@
 					</span>
 
 					<div class="wrap-input3 validate-input" data-validate="Name is required">
-						<input class="input3" type="text" name="name" placeholder="Name">
+						<input class="input3" type="text" id="name" placeholder="Name">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="job" placeholder="Job title">
+						<input class="input3" type="text" id="job" placeholder="Job title">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="unit" placeholder="Unit / Department">
+						<input class="input3" type="text" id="unit" placeholder="Unit / Department">
 						<span class="focus-input3"></span>
 					</div>
 
@@ -55,12 +60,12 @@
 					</span>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="email" placeholder="Email">
+						<input class="input3" type="text" id="email" placeholder="Email">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="phone" placeholder="Phone">
+						<input class="input3" type="text" id="phone" placeholder="Phone">
 						<span class="focus-input3"></span>
 					</div>
 				</form>
@@ -76,32 +81,32 @@
 					</span>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="org" placeholder="Organization" value="Institut de Recerca Biomèdica de Lleida (IRBLleida)">
+						<input class="input3 has-val" type="text" id="org" placeholder="Organization" value="Institut de Recerca Biomèdica de Lleida (IRBLleida)">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="add1" placeholder="Address line" value="Av. Alcalde Rovira Roure, 80">
+						<input class="input3 has-val" type="text" id="addr1" placeholder="Address line" value="Av. Alcalde Rovira Roure, 80">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="office" placeholder="Office">
+						<input class="input3" type="text" id="addr2" placeholder="Office number">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="city" placeholder="City" value="Lleida">
+						<input class="input3 has-val" type="text" id="city" placeholder="City" value="Lleida">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="postcode" placeholder="Postcode" value="25198">
+						<input class="input3 has-val" type="text" id="postcode" placeholder="Postcode" value="25198">
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3">
-						<input class="input3" type="text" name="country" placeholder="Country" value="Spain">
+						<input class="input3 has-val" type="text" id="country" placeholder="Country" value="Spain">
 						<span class="focus-input3"></span>
 					</div>
 				</form>
@@ -111,10 +116,24 @@
 </div>
 	</div>
 
-	<div class="col-md-4 container-contact3">
+	<div class="col-md-6 container-contact3">
 		<div class="card">
 			<div class="card-body">
-				<table width="400" cellspacing="0" cellpadding="0" border="0">
+				<div>
+					<p><u>To:</u> John</p>
+					<hr>
+					<p><u>From:</u> </p>
+					<hr>
+					<p><u>Subject:</u>This is my new IRBLleida email signature!</p>
+					<hr>
+				</div>
+				<div>
+					<p>Hi John,</p>
+					<p>Check out this awesome email signature created by UBiostat!</p>
+				</div>
+				<br/><br/>
+
+				<table cellspacing="0" cellpadding="0" border="0">
 				   <tr>
 				      <td style="text-align:left;padding-bottom:10px">
 				        <a href="http://www.irblleida.org/"><img style="border:none" src="https://s1g.s3.amazonaws.com/b0477dfde654c467520c184ea260c070.jpg"></a>
@@ -125,10 +144,10 @@
 				    </tr>
 				    <tr>
 				      <td style="vertical-align: top; text-align:left;color:#000000;font-size:12px;font-family:helvetica, arial;; text-align:left">
-				        <span style="margin-right:5px;color:#000000;font-size:14px;font-family:helvetica, arial">Jordi Vilaplana, Ph. D.</span>
-				        <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial">Computer Science Researcher</span>
+				        <span style="margin-right:5px;color:#000000;font-size:14px;font-family:helvetica, arial" id="sig-name"></span>
+				        <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-job"></span>
 				        <br>
-				        <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial">Biostatistics Unit</span>
+				        <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-unit"></span>
 				        <br>
 				        <table cellspacing="0" cellpadding="0" border="0" style="margin:0 5px 5px 0;display:inline">
 				          <tr>
@@ -136,7 +155,7 @@
 				              <img width="40" height="40" src="https://s1g.s3.amazonaws.com/04c21d7be2ceb2a84d2fd0cd2aeb27cb.png" alt="email" style="border:none">
 				            </td>
 				            <td>
-				              <span style="font:12px helvetica, arial"><a href="mailto:jvilaplana@irblleida.cat" style="color:#3388cc;text-decoration:none">jvilaplana@irblleida.cat</a></span>
+				              <span style="font:12px helvetica, arial"><a id="sig-email" href="" style="color:#3388cc;text-decoration:none"></a></span>
 				            </td>
 				          </tr>
 				          </table>
@@ -147,15 +166,16 @@
 				              </td>
 				              <td>
 				                <span style="font:12px helvetica, arial">
-				                  <a href="tel:+34 973 00 36 69" style="color:#3388cc;text-decoration:none">+34973003669</a>
+				                  <a id="sig-phone" href="" style="color:#3388cc;text-decoration:none"></a>
 				                </span>
 				              </td>
 				            </tr>
 				          </table>
 				          <br>
 				          <br>
-				          <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial">Institut de Recerca Biom&#xE8;dica de Lleida (IRBLleida)</span>
-				          Av. Alcalde Rovira Roure, 80, Despatx 4.3, Lleida, 25198, Spain
+				          <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-org">Institut de Recerca Biom&#xE8;dica de Lleida (IRBLleida)</span>
+									<br/>
+									<span id="sig-addr1">Av. Alcalde Rovira Roure, 80</span><span id="sig-addr2"></span><span id="sig-city">, Lleida</span><span id="sig-postcode">, 25198</span><span id="sig-country">, Spain</span>
 				          <br>
 				          <br>
 				          <table cellpadding="0" cellpadding="0" border="0"><tr><td style="padding-right:5px">
@@ -179,7 +199,7 @@
 				    </td>
 				  </tr>
 				 </table>
-				 <table width="400" cellspacing="0" cellpadding="0" border="0" style="margin-top:10px">
+				 <table cellspacing="0" cellpadding="0" border="0" style="margin-top:10px">
 				   <tr>
 				     <td style="text-align:left;color:#aaaaaa;font-size:10px;font-family:helvetica, arial">
 				       <p>This message may contain private or confidential information, and is&nbsp;addressed&nbsp;exclusively to its intended recipient. If you have received it&nbsp;in error, please notify&nbsp;the sender and delete it. Please bear in mind that&nbsp;you are not authorized to use it&nbsp;for any purposes.</p>
@@ -188,7 +208,7 @@
 				 </table>
 
 	  </div>
-		<div class="panel-footer">
+		<div class="card-footer">
 			<form class="contact3-form validate-form">
 				<div class="container-contact3-form-btn">
 					<button class="contact3-form-btn">
