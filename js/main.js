@@ -25,13 +25,12 @@
               $('#sig-phone').attr('href', 'tel:' + $(this).val());
             }
 
-            if(id == 'addr1' || id == 'addr2' || id == 'city' || id == 'postcode' || id == 'country'){
-              val = ', ' + $(this).val();
+            if(id == 'addr2' || id == 'city' || id == 'postcode' || id == 'country'){
+              if($(this).val()) val = ', ' + $(this).val();
             }
             $('#sig-' + id).text(val);
         })
     })
-
 
     /*==================================================================
     [ Validate ]*/
@@ -45,7 +44,20 @@
             check=false;
         }
 
-        return check;
+        if(check){
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent($("#signature").html()));
+            element.setAttribute('download', 'signatura-' + $("#sig-name").text() + '.html');
+
+            element.style.display = 'none';
+            document.body.appendChild(element);
+
+            element.click();
+
+            document.body.removeChild(element);
+        }
+
+        return false;
     });
 
 

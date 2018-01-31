@@ -28,7 +28,12 @@
 	<div class="col-md-12" style="margin-top: 20px">
 		<span class="contact-title">
 			IRBLleida Sigrnature generator
+			<div style="float: right; margin-right: 10px;">
+				<p> <a href="#" data-toggle="modal" data-target="#help">How to costumize the signature? </a></p>
+			</div>
 		</span>
+
+
 	</div>
 	<div class="col-md-6">
 		<div class="row">
@@ -118,13 +123,18 @@
 
 	<div class="col-md-6 container-contact3">
 		<div class="card">
+			<div class="card-header">
+				<span class="card-title-custom">
+					<h4>Preview</h4>
+				</span>
+			</div>
 			<div class="card-body">
 				<div>
 					<p><u>To:</u> John</p>
 					<hr>
 					<p><u>From:</u> </p>
 					<hr>
-					<p><u>Subject:</u>This is my new IRBLleida email signature!</p>
+					<p><u>Subject:</u> This is my new IRBLleida email signature!</p>
 					<hr>
 				</div>
 				<div>
@@ -133,6 +143,7 @@
 				</div>
 				<br/><br/>
 
+				<div id="signature">
 				<table cellspacing="0" cellpadding="0" border="0">
 				   <tr>
 				      <td style="text-align:left;padding-bottom:10px">
@@ -206,12 +217,13 @@
 				     </td>
 				   </tr>
 				 </table>
+			 </div>
 
 	  </div>
 		<div class="card-footer">
 			<form class="contact3-form validate-form">
 				<div class="container-contact3-form-btn">
-					<button class="contact3-form-btn">
+					<button class="btn btn-primary">
 						Download
 					</button>
 				</div>
@@ -220,6 +232,28 @@
 		</div>
 	</div>
 	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal_help" tabindex="-1" role="dialog" aria-labelledby="help" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="help">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
