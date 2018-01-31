@@ -1,4 +1,3 @@
-
 (function ($) {
     "use strict";
 
@@ -25,10 +24,14 @@
               $('#sig-phone').attr('href', 'tel:' + $(this).val());
             }
 
+            if(id == 'other'){
+              val = val.split('\n').join('<br/>');
+            }
+
             if(id == 'addr2' || id == 'city' || id == 'postcode' || id == 'country'){
               if($(this).val()) val = ', ' + $(this).val();
             }
-            $('#sig-' + id).text(val);
+            $('#sig-' + id).html(val);
         })
     })
 
@@ -55,6 +58,8 @@
             element.click();
 
             document.body.removeChild(element);
+
+            $('#modal_help').modal('show');
         }
 
         return false;
