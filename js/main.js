@@ -1,3 +1,16 @@
+function downloadHTML(){
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent($("#signature").html()));
+  element.setAttribute('download', 'signatura-' + $("#sig-name").text() + '.html');
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
 (function ($) {
     "use strict";
 
@@ -48,18 +61,9 @@
         }
 
         if(check){
-            var element = document.createElement('a');
-            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent($("#signature").html()));
-            element.setAttribute('download', 'signatura-' + $("#sig-name").text() + '.html');
-
-            element.style.display = 'none';
-            document.body.appendChild(element);
-
-            element.click();
-
-            document.body.removeChild(element);
-
             $('#modal_help').modal('show');
+            $('#content-webmail').html($('#content-webmail').text() + '<br/><br/><div class="card"><div class="card-body">' + $('#signature').html() + '</div></div><br/>');
+            $('#content-gmail').html($('#content-gmail').text() + '<br/><br/><div class="card"><div class="card-body">' + $('#signature').html() + '</div></div><br/>');
         }
 
         return false;

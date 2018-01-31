@@ -181,10 +181,10 @@ iframe {
 .contact-title {
   display: block;
   font-family: Poppins-Bold;
-  font-size: 39px;
+  font-size: 30px;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -203,13 +203,11 @@ iframe {
 .card-title-custom {
   display: block;
   font-family: Poppins-Bold;
-  font-size: 39px;
+  font-size: 30px;
   color: #000;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 
