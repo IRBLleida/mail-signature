@@ -37,11 +37,7 @@ function downloadHTML(){
               $('#sig-phone').attr('href', 'tel:' + $(this).val());
             }
 
-            if(id == 'other'){
-              val = val.split('\n').join('<br/>');
-            }
-
-            if(id == 'addr2' || id == 'city' || id == 'postcode' || id == 'country'){
+            if(id == 'city' || id == 'postcode' || id == 'country'){
               if($(this).val()) val = ', ' + $(this).val();
             }
             $('#sig-' + id).html(val);
