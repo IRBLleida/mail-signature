@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CREBA Signature</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+<div class="row container-bg-contact3">
+	<div class="col-md-12" style="margin-top: 10px">
+		<div style="float:right; margin-right: 10px;">
+			<a href="index.html">IRBLleida Users</a>
+		</div>
+		<span class="contact-title">
+			CREBA Signature Generator
+		</span>
+	</div>
+	<div class="col-md-6">
+		<div class="row">
+		<div class="col-md-6">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form">
+					<span class="contact3-form-title">
+						<h4>Your details</h4>
+					</span>
+
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" id="name" placeholder="Name">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3" type="text" id="job" placeholder="Job title">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3" type="text" id="unit" placeholder="Unit / Department">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<textarea class="input3" type="text" id="other" placeholder="Other"></textarea>
+						<span class="focus-input3"></span>
+					</div>
+
+					<span class="contact3-form-title">
+						<h4>Contact details</h4>
+					</span>
+
+					<div class="wrap-input3">
+						<input class="input3" type="text" id="email" placeholder="Email">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3" type="text" id="phone" placeholder="Phone">
+						<span class="focus-input3"></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form">
+					<span class="contact3-form-title">
+						<h4>Address</h4>
+					</span>
+
+					<div class="wrap-input3">
+						<input class="input3 has-val" type="text" id="org" placeholder="Organization" value="Institut de Recerca Biomèdica de Lleida (IRBLleida)">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3 has-val" type="text" id="addr1" placeholder="Address line" value="Av. Alcalde Rovira Roure, 80">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3" type="text" id="addr2" placeholder="Office number">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3 has-val" type="text" id="city" placeholder="City" value="Lleida">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3 has-val" type="text" id="postcode" placeholder="Postcode" value="25198">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3">
+						<input class="input3 has-val" type="text" id="country" placeholder="Country" value="Spain">
+						<span class="focus-input3"></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+
+	<div class="col-md-6 container-contact3">
+		<div class="card">
+			<div class="card-header">
+				<span class="card-title-custom">
+					<h4>Preview</h4>
+				</span>
+			</div>
+			<div class="card-body">
+				<div>
+					<p><u>To:</u> John</p>
+					<hr>
+					<p><u>Subject:</u> This is my new IRBLleida email signature!</p>
+					<hr>
+				</div>
+				<div>
+					<p>Hi John,</p>
+					<p>Check out this awesome email signature created by UBiostat!</p>
+				</div>
+				<br/><br/>
+
+				<div id="signature">
+				<table cellspacing="0" cellpadding="0" border="0">
+				   <tr>
+				      <td style="text-align:left;padding-bottom:10px">
+				        <a href="http://www.creballeida.org/"><img style="border:none" src="https://www.dropbox.com/s/jl9pogb8k6k5okk/CREBAIRBLleida.png?raw=1"></a>
+				      </td>
+				    </tr>
+				    <tr>
+				      <td style="border-top:solid #6c1d41 2px" height="12"></td>
+				    </tr>
+				    <tr>
+				      <td style="vertical-align: top; text-align:left;color:#000000;font-size:12px;font-family:helvetica, arial;; text-align:left">
+				        <b><span style="margin-right:5px;color:#000000;font-size:14px;font-family:helvetica, arial" id="sig-name"></span></b>
+								<br>
+				        <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-job"></span>
+				        <br>
+				        <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-unit"></span>
+				        <br>
+								<span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-other"></span>
+				        <br>
+				        <table cellspacing="0" cellpadding="0" border="0" style="margin:0 5px 5px 0;display:inline">
+				          <tr>
+				            <td style="padding-right:5px">
+				              <img width="40" height="40" src="https://s1g.s3.amazonaws.com/04c21d7be2ceb2a84d2fd0cd2aeb27cb.png" alt="email" style="border:none">
+				            </td>
+				            <td>
+				              <span style="font:12px helvetica, arial"><a id="sig-email" href="" style="color:#3388cc;text-decoration:none"></a></span>
+				            </td>
+				          </tr>
+				          </table>
+				          <table cellspacing="0" cellpadding="0" border="0" style="margin:0 5px 5px 0;display:inline">
+				            <tr>
+				              <td style="padding-right:5px">
+				                <img width="40" height="40" src="https://s1g.s3.amazonaws.com/cfe2f2303daeca186f7372018ac2f0c4.png" alt="office" style="border:none">
+				              </td>
+				              <td>
+				                <span style="font:12px helvetica, arial">
+				                  <a id="sig-phone" href="" style="color:#3388cc;text-decoration:none"></a>
+				                </span>
+				              </td>
+				            </tr>
+				          </table>
+				          <br>
+				          <br>
+				          <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-org">Ci&#xE8;ncia i Recerca Experimental Biomèdica Aplicada (CREBA)</span>
+									<br/>
+									<span id="sig-addr1"> Carrer de Balaguer, 33</span><span id="sig-addr2"></span><span id="sig-city">, Torrelameu</span><span id="sig-postcode">, 25138</span><span id="sig-country">, Spain</span>
+				          <br>
+				          <br>
+				          <table cellpadding="0" cellpadding="0" border="0"><tr><td style="padding-right:5px">
+				            <a href="https://www.facebook.com/creballeida" style="display: inline-block">
+				              <img width="40" height="40" src="https://s1g.s3.amazonaws.com/f54e4739ce3f4ad84ae30ba6db56e907.png" alt="Facebook" style="border:none">
+				            </a>
+				          </td>
+				          <td style="padding-right:5px">
+				            <a href="https://twitter.com/creballeida" style="display: inline-block">
+				              <img width="40" height="40" src="https://s1g.s3.amazonaws.com/b64546c018204dc0c755767d3d07b8fe.png" alt="Twitter" style="border:none">
+				            </a>
+				          </td>
+				          <td style="padding-right:5px">
+				            <a href="https://www.youtube.com/channel/UCL4lYKUvtLAGQvlgmqUjmgA" style="display: inline-block">
+				              <img width="40" height="40" src="https://s1g.s3.amazonaws.com/b2d0639d26bc9f8e372e8b9c515aebcf.png" alt="YouTube" style="border:none">
+				            </a>
+				          </td>
+									<td style="padding-right:5px">
+										<a href=" https://www.linkedin.com/company/creba" style="display: inline-block">
+											<img width="40" height="40" src="https://s1g.s3.amazonaws.com/b0387b2bb3d704883b4ed69c257a46b5.png" alt="LinkedIn" style="border:none">
+										</a>
+									</td>
+				        </tr>
+				      </table>
+              <a href="http://www.creballeida.org/" style="text-decoration:none;color:#3388cc">www.creballeida.org</a><br/>
+				      <a href="http://www.irblleida.org/" style="text-decoration:none;color:#3388cc">www.irblleida.org</a>
+				    </td>
+				  </tr>
+				 </table>
+				 <table cellspacing="0" cellpadding="0" border="0" style="margin-top:10px">
+				   <tr>
+				     <td style="text-align:left;color:#aaaaaa;font-size:10px;font-family:helvetica, arial">
+				       <p>This message may contain private or confidential information, and is&nbsp;addressed&nbsp;exclusively to its intended recipient. If you have received it&nbsp;in error, please notify&nbsp;the sender and delete it. Please bear in mind that&nbsp;you are not authorized to use it&nbsp;for any purposes.</p>
+							 <p>More information <a href="http://irblleida.github.io/mail-signature/lopd.html">here</a>.</p>
+				     </td>
+				   </tr>
+				 </table>
+			 </div>
+
+	  </div>
+		<div class="card-footer">
+			<form class="contact3-form validate-form">
+				<div class="container-contact3-form-btn">
+					<button id="generator" class="btn btn-primary">
+						Generate
+					</button>
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+	</div>
+</div
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal_help" tabindex="-1" role="dialog" aria-labelledby="help-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="help-label">How to customize the signature?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+				<div id="accordion">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				          For IRBLleida Webmail
+				        </button>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				      <div class="card-body">
+								<ul>
+									<li>1- Open <a href="http://mail.irblleida.cat">IRBLleida Webmail</a></li>
+									<li>2- Navigate to settings option (bottom left)</li>
+									<li>3- In "General" sheet, click to "+ Añadir firma"</li>
+									<li id="content-webmail">4- Select and copy the content below</li>
+									<li>5- Paste it to the text area and save the changes!</li>
+								</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          For Gmail
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+								<ul>
+ 								 <li>1- Open <a href="https://gmail.com">Gmail</a></li>
+ 								 <li>2- Navigate to settings icon (top right) and then, settings option.</li>
+ 								 <li>3- In "General" sheet, go to signature section.</li>
+ 								 <li id="content-gmail">4- Select and copy the content below</li>
+ 								 <li>5- Paste it to the text area and save the changes!</li>
+ 							 </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          For Thunderbird
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+								<ul>
+ 								 <li>1- Open Thunderbird</li>
+ 								 <li>2- Click to your "irblleida" mail.</li>
+								 <li>3- Click to "Ver configuración de esta cuenta" (or alternatively, right click to your mail and in the settings option)</li>
+ 								 <li>4- In the main settings section, go to signature section and choose the "attach file (text, html or image)" option.</li>
+ 								 <li>5- Download <a href="#" onclick="downloadHTML();">here</a> the HTML file.</li>
+ 								 <li>6- Choose the file and save the changes.</li>
+ 							 </ul>
+				      </div>
+				    </div>
+				  </div>
+					<div class="card">
+				    <div class="card-header" id="headingFour">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          Other
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+				      <div class="card-body">
+				        Contact to <a href="mailto:jvilaplana@irblleida.cat">jvilaplana@irblleida.cat</a> or <a href="mailto:pbalaguer@irblleida.cat">pbalaguer@irblleida.cat</a> for more information.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
