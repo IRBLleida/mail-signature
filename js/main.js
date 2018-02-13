@@ -36,8 +36,7 @@ function downloadHTML(){
             if(id == 'phone'){
               $('#sig-phone').attr('href', 'tel:' + $(this).val());
             }
-
-            if(id == 'city' || id == 'postcode' || id == 'country'){
+            if(id == 'city' || id == 'postcode' || id == 'country' || id=='addr2'){
               if($(this).val()) val = ', ' + $(this).val();
             }
             $('#sig-' + id).html(val);
