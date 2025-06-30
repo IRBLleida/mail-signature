@@ -20,6 +20,10 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+	<style>
+		#sig-pronouns:not(:empty)::before { content: '('; }
+		#sig-pronouns:not(:empty)::after { content: ')'; }
+	</style>
 </head>
 <body>
 
@@ -169,7 +173,7 @@
 				    </tr>
 				    <tr>
 				      <td style="vertical-align: top; text-align:left;color:#000000;font-size:12px;font-family:helvetica, arial;; text-align:left">
-				        <b><span style="margin-right:5px;color:#000000;font-size:8px;font-family:helvetica, arial" id="sig-pronouns"></span> <span style="margin-right:5px;color:#000000;font-size:14px;font-family:helvetica, arial" id="sig-name"></span></b>
+				        <b><span style="margin-right:5px;color:#000000;font-size:14px;font-family:helvetica, arial" id="sig-name"></span> <span style="margin-right:5px;color:#000000;font-size:8px;font-family:helvetica, arial" id="sig-pronouns"></span></b>
 					
 					<br>
 				        <span style="margin-right:5px;color:#000000;font-size:12px;font-family:helvetica, arial" id="sig-job"></span>
